@@ -12,7 +12,7 @@ public extension Dictionary {
     
     init(pairs: [(Key, Value)]) {
         self = [Key: Value]()
-        pairs.forEach { (k, v) -> () in
+        pairs.forEach { (__val:(Key, Value)) -> () in let (k,v) = __val; return
             self[k] = v
         }
     }
